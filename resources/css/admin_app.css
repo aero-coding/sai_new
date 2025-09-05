@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+svg {
+    max-width: 30px;
+}
+
+/* --- Layout Principal (admin_app.blade.php) --- */
+nav.shadow-sm {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Logo */
+nav a.font-semibold {
+    color: var(--text-color-dark);
+    transition: color 0.2s ease;
+}
+nav a.font-semibold:hover {
+    color: var(--primary-color);
+}
+
+/* Enlaces del menú de navegación */
+nav .sm\\:flex a {
+    color: #4b5563; /* text-gray-600 */
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+nav .sm\\:flex a:hover {
+    color: var(
+        --primary-color
+    ) !important; /* Importante para sobreescribir Tailwind */
+    border-bottom-color: var(--primary-color);
+}
+
+/* Botón de Logout */
+nav form button {
+    font-weight: 700;
+    color: #4b5563;
+    transition: color 0.2s ease;
+}
+nav form button:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Contenido Principal */
+main.py-8 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* --- Página de Login (login.blade.php) --- */
+
+/* Usamos una clase específica para el body del login */
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #f8f9fa, #e9ecef);
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 2.5rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    border-top: 4px solid var(--primary-color);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login-header h2 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--text-color-dark);
+}
+
+.login-header p {
+    color: #6c757d;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    color: #495057;
+}
+
+/* Estilos de input heredados de los generales, no se necesita más */
+.btn-login {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.login-error {
+    background-color: var(--primary-color-lighter-transparent);
+    color: var(--primary-color-darker);
+    border: 1px solid var(--primary-color-darker);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+:root {
+    --primary-color: #d94647;
+    --primary-color-darker: #b83b3c;
+    --primary-color-lighter-transparent: rgba(217, 70, 71, 0.1);
+    --text-color-dark: #343a40;
+    --border-color-light: #dee2e6;
+    --background-color: #f8f9fa; /* Un gris muy claro para el fondo */
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: "Lato", sans-serif;
+    color: var(--text-color-dark);
+}
+
+/* --- Layout y Navegación --- */
+/* Estilos para la barra de navegación superior en admin_app.blade.php */
+nav.bg-white {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+nav .sm\\:flex a:hover {
+    color: var(--primary-color) !important;
+    border-bottom-color: var(--primary-color);
+}
+
+/* Contenedor principal */
+main.py-8 .max-w-7xl {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Tipografía --- */
+h1 {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 1rem !important; /* Más espacio debajo del título principal */
+}
+
+/* --- Tarjetas (Cards) --- */
+.card {
+    border: none;
+    border-radius: 0.75rem; /* Bordes más redondeados */
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    transition: all 0.2s ease-in-out;
+    border-top: 3px solid var(--primary-color); /* Acento de color superior */
+}
+
+.card:hover {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+        0 4px 6px -4px rgb(0 0 0 / 0.1);
+    transform: translateY(-3px);
+}
+
+.card-body {
+    padding: 1.75rem; /* Más espacio interno */
+}
+
+/* --- Botones --- */
+.btn {
+    border-radius: 0.5rem;
+    font-weight: 700;
+    padding: 0.6rem 1.2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Botón Primario (Crear, Actualizar) */
+.btn-primary {
+    --bs-btn-bg: var(--primary-color);
+    --bs-btn-border-color: var(--primary-color);
+    --bs-btn-hover-bg: var(--primary-color-darker);
+    --bs-btn-hover-border-color: var(--primary-color-darker);
+    --bs-btn-active-bg: var(--primary-color-darker);
+    --bs-btn-active-border-color: var(--primary-color-darker);
+}
+
+/* Botón de Éxito (Guardar Cambios) */
+.btn-success {
+    --bs-btn-hover-bg: #157347;
+    --bs-btn-hover-border-color: #146c43;
+}
+
+/* Botón Secundario (Cancelar, Volver) */
+.btn-outline-secondary {
+    --bs-btn-color: #6c757d;
+    --bs-btn-border-color: #ced4da;
+    --bs-btn-hover-bg: #6c757d;
+    --bs-btn-hover-color: #fff;
+}
+
+/* Botón de Peligro (Eliminar) */
+.btn-outline-danger {
+    --bs-btn-color: #dc3545;
+    --bs-btn-border-color: #dc3545;
+    --bs-btn-hover-bg: #dc3545;
+    --bs-btn-hover-color: #fff;
+}
+
+/* Botones de acción pequeños en tablas */
+.table .btn-sm {
+    padding: 0.2rem 0.5rem;
+}
+
+/* --- Formularios --- */
+.form-label {
+    font-weight: 700;
+    color: #495057;
+}
+
+.form-control,
+.form-select {
+    border-radius: 0.5rem;
+    padding: 0.6rem 1rem;
+    border-color: #ced4da;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem var(--primary-color-lighter-transparent);
+}
+
+/* Estilo para los selectores de color */
+.form-control-color {
+    padding: 0.2rem !important;
+    border-radius: 0.5rem;
+    height: calc(2.25rem + 10px);
+}
+
+/* --- Tablas --- */
+.table {
+    border-collapse: separate;
+    border-spacing: 0;
+    vertical-align: middle;
+}
+
+.table thead {
+    vertical-align: bottom;
+}
+
+.table thead th {
+    background-color: var(--background-color);
+    border-bottom: 2px solid var(--border-color-light);
+    color: var(--text-color-dark);
+    font-weight: 700;
+}
+
+.table tbody tr:hover {
+    background-color: var(--primary-color-lighter-transparent);
+    transition: background-color 0.2s ease;
+}
+
+.table td,
+.table th {
+    padding: 1rem;
+}
+
+/* --- Pestañas (Tabs) --- */
+.nav-tabs {
+    border-bottom: 2px solid var(--border-color-light);
+}
+
+.nav-tabs .nav-link {
+    font-weight: 700;
+    color: #6c757d;
+    border: none;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: var(--border-color-light);
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--primary-color);
+    background-color: transparent;
+    border-color: var(--primary-color);
+}
+
+/* --- Badges (Etiquetas) --- */
+.badge {
+    padding: 0.5em 0.75em;
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+.admin-nav {
+    background-color: #d94647; /* Tu color principal */
+    color: white;
+}
+
+/* Estilo para el logo o nombre de la app */
+.admin-nav .logo {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.admin-nav .logo:hover {
+    color: #f0f0f0;
+}
+
+/* Estilos para los enlaces del menú */
+.admin-nav .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre un enlace */
+.admin-nav .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+/* Estilo para el enlace de la página activa */
+.admin-nav .nav-link.active {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    font-weight: 600;
+}
+
+/* Estilo para el botón de Logout */
+.admin-nav .logout-btn {
+    color: white;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.admin-nav .logout-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}

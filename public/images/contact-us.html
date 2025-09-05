@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>South american iniciative</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- Custom Fonts -->
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+<style>
+@media only screen and (max-width: 600px) {
+ 
+}
+.progress{
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+}
+.progress:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 12px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.progress > span{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.progress .progress-left{
+    left: 0;
+}
+.progress .progress-bar{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 12px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+.progress .progress-left .progress-bar{
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+.progress .progress-right{
+    right: 0;
+}
+.progress .progress-right .progress-bar{
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+}
+.progress .progress-value{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: #44484b;
+    font-size: 24px;
+    color: #fff;
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.progress.blue .progress-bar{
+    border-color: #ffba00;
+}
+.progress.blue .progress-left .progress-bar{
+    animation: loading-4 1.5s linear forwards 1.8s;
+}
+.progress.yellow .progress-bar{
+    border-color: #fdba04;
+}
+.progress.yellow .progress-left .progress-bar{
+    animation: loading-3 1s linear forwards 1.8s;
+}
+.progress.pink .progress-bar{
+    border-color: #ed687c;
+}
+.progress.pink .progress-left .progress-bar{
+    animation: loading-4 0.4s linear forwards 1.8s;
+}
+.progress.green .progress-bar{
+    border-color: #1abc9c;
+}
+.progress.green .progress-left .progress-bar{
+    animation: loading-5 1.2s linear forwards 1.8s;
+}
+@keyframes loading-1{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes loading-2{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg);
+    }
+}
+@keyframes loading-3{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+@keyframes loading-4{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(36deg);
+        transform: rotate(36deg);
+    }
+}
+@keyframes loading-5{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(126deg);
+        transform: rotate(126deg);
+    }
+}
+@media only screen and (max-width: 990px){
+    .progress{ margin-bottom: 20px; }
+}
+
+#myCarousel .carousel-item .mask {
+    position: absolute;
+    top: 0;
+	left:0;
+	height:100%;
+    width: 100%;
+    background-attachment: fixed;
+}
+#myCarousel h4{
+	font-size:50px;
+	margin-bottom:15px;
+	color:black;
+	line-height:100%;
+	letter-spacing:0.5px;
+	font-weight:600;
+}
+#myCarousel p{
+	font-size:18px;
+	margin-bottom:15px;
+	color:#d5d5d5;
+}
+
+
+#myCarousel .carousel-item h4{-webkit-animation-name:fadeInLeft; animation-name:fadeInLeft;} 
+#card{-webkit-animation-name:fadeInLeft; animation-name:fadeInLeft;} 
+#myCarousel .carousel-item p{-webkit-animation-name:slideInRight; animation-name:slideInRight;} 
+#myCarousel .carousel-item a{-webkit-animation-name:fadeInUp; animation-name:fadeInUp;}
+#myCarousel .carousel-item .mask img{-webkit-animation-name:slideInRight; animation-name:slideInRight; display:block; height:auto; max-width:100%;}
+#myCarousel h4, #myCarousel p, #myCarousel a, #myCarousel .carousel-item .mask img{-webkit-animation-duration: 1s;
+    animation-duration: 1.2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+#myCarousel .container {max-width: 1430px;  }
+#myCarousel .carousel-item{height:100%; min-height:550px; }
+#myCarousel{position:relative; z-index:1;     background: linear-gradient(to right, rgb(29, 128, 159), rgb(11, 74, 109)); background-size:cover; }
+
+.carousel-control-next, .carousel-control-prev{height:40px; width:40px; padding:12px; top:50%; bottom:auto; transform:translateY(-50%);    background-color: #1d809f; }
+
+
+.carousel-item {
+    position: relative;
+    display: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    transition: -webkit-transform .6s ease;
+    transition: transform .6s ease;
+    transition: transform .6s ease,-webkit-transform .6s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+.carousel-fade .carousel-item {
+	opacity: 0;
+	-webkit-transition-duration: .6s;
+	transition-duration: .6s;
+	-webkit-transition-property: opacity;
+	transition-property: opacity
+}
+.carousel-fade .carousel-item-next.carousel-item-left, .carousel-fade .carousel-item-prev.carousel-item-right, .carousel-fade .carousel-item.active {
+	opacity: 1
+}
+.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-right.active {
+	opacity: 0
+}
+.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0)
+}
+@supports (transform-style:preserve-3d) {
+	.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
+	-webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0)
+	}
+}
+.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+}
+
+#mainNav{
+ transition: all 0.5s ease;
+ }
+	@font-face {
+  font-family: 'PAPYRUS';
+  src: url('PAPYRUS.eot'); /* IE9 Compat Modes */
+  src: url('PAPYRUS.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('PAPYRUS.woff') format('woff'), /* Modern Browsers */
+       url('PAPYRUS.TTF')  format('truetype'); /* Safari, Android, iOS */
+      
+}
+.pl-lg-3, .px-lg-3 {
+    padding-left: 0.6rem!important;
+	font-size:14px;
+}
+	.bg-secondary {
+    background-color: #ffffff!important;
+		}
+marquee{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	 font-family: 'PAPYRUS';
+}
+.nav-link {
+	 font-family: 'PAPYRUS';
+}
+.fixed-top {
+    position: fixed;
+    top: 82px;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+marquee {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #1d809f;
+    color: white;
+    /* font-weight: bold; */
+    letter-spacing: 2px;
+}
+a {
+    color: black;
+}
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color:white;
+}
+.navbar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+/*
+headeer top
+*/
+.topbar{
+  background-color: #212529;
+  padding: 0;
+}
+
+.topbar .container .row {
+  margin:-7px;
+  padding:0;
+}
+
+.topbar .container .row .col-md-12 { 
+  padding:0;
+}
+
+.topbar p{
+  margin:0;
+  display:inline-block;
+  font-size: 13px;
+  color: #f1f6ff;
+}
+
+.topbar p > i{
+  margin-right:5px;
+}
+.topbar p:last-child{
+  text-align:right;
+} 
+
+header .navbar {
+    margin-bottom: 0;
+}
+
+.topbar li.topbar {
+    display: inline;
+    padding-right: 18px;
+    line-height: 52px;
+    transition: all .3s linear;
+}
+
+.topbar li.topbar:hover {
+    color: #1bbde8;
+}
+
+.topbar ul.info i {
+    color: #131313;
+    font-style: normal;
+    margin-right: 8px;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}
+
+.topbar ul.info li {
+    float: right;
+    padding-left: 30px;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 44px;
+}
+
+.topbar ul.info i span {
+    color: #aaa;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 50px;
+    padding-left: 18px;
+}
+
+ul.social-network {
+  border:none;
+  margin:0;
+  padding:0;
+}
+
+ul.social-network li {
+  border:none;  
+  margin:0;
+}
+
+ul.social-network li i {
+  margin:0;
+}
+
+
+.copy{
+
+	background:gray;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+ul.social-network {
+  list-style: none;
+  margin: 5px 0 10px -25px;
+  float: right;
+  margin-top:1px;
+}
+.bt-copyright {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    font-family: 'Work Sans';
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #fff;
+}
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    will-change: opacity, transform;
+    transition: .3s ease-out;
+    color: #fff;
+}
+a {
+  color: #0a0a0a;
+  text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+.bg-image-full {
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.bg-dark {
+    background-color: #222!important;
+}
+
+.mx-background-top-linear {
+    background: -webkit-linear-gradient(45deg, #54d400 48%, #1b1e21 48%);
+    background: -webkit-linear-gradient(left, #54d400 48%, #1b1e21 48%);
+    background: linear-gradient(45deg, #54d400 48%, #1b1e21 48%);
+}
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+    border: 0px solid #2D2D2D;
+    padding: 5px 0 0;
+    width: 40px;
+    display: inline-block;
+    text-align: center;
+    height: 42px;
+    vertical-align: baseline;
+    color: #000;
+}
+a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-primary:hover {
+    background-color: #ffba00!important;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.card{
+    -webkit-animation: fadein 2s;
+       -moz-animation: fadein 2s;
+        -ms-animation: fadein 2s; 
+         -o-animation: fadein 2s; 
+            animation: fadein 2s;
+}
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: -20%; }
+40% { left: -40%; }
+60% { left: -60%; }
+80% { left: -80%; }
+100% { left: -100%; }
+
+
+}
+div#slider { overflow: hidden; }
+div#slider figure img { width: 10%; float: left;height:100px;padding:5px;border-radius:15px;}
+div#slider figure { 
+  position: relative;
+  width: 200%;
+  height:150px;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 15s slidy infinite; 
+}
+.radial-gradient {
+
+ 
+  /*Fallback if gradeints don't work */
+  background: #1d809f;
+  /*Linear gradient... */
+   
+   background: radial-gradient( at center, #1d809f, #0e4c5f );
+}
+#address-container{
+text-align: center;
+
+}
+.contactt{
+	
+	padding-right:15px;
+	color:#898d8e;
+
+}
+.globalgiv-logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+.footericon {
+    color: #ffba00;
+    line-height: 24px;
+    padding-left: 5px;
+    padding-right: 3px;
+}
+.alignnone{
+    max-width: 100%;
+    width: 145px;
+    margin-top: 0px;
+    max-height: 145px;
+
+}
+.globalgiv-logo-footer img {
+    margin-right: 20px;
+    max-width: 100%;
+    width: 145px;
+    margin-top: 0px;
+}
+.about-footer{
+
+	color:#898d8e;
+
+}
+
+footer.footer {
+    padding-top: 5rem;
+    padding-bottom: 0rem;
+        background-color: #1f1f1f;
+}
+.copy{
+	color:white;
+	padding-top:15px;
+	padding-bottom:15px;
+	    background-color: #181818;
+}
+	</style>
+
+
+
+
+	
+</head>
+<!--#include file="header.html" -->
+	<marquee>Venezuela crisis - US NGO Providing large-scale Humanitarian Aid.</marquee>
+	  <header class="topbar">
+      <div class="container">
+        <div class="row">
+          <!-- social icon-->
+          <div class="col-sm-12">
+            <ul class="social-network">
+              <li style="background:#132ce2"><a class="waves-effect waves-dark" href="https://www.facebook.com/southamericaninitiative/"><i class="fa fa-facebook"></i></a></li>
+              <li style="background:#007bff"><a class="waves-effect waves-dark" href="https://twitter.com/SA_Initiative"><i class="fa fa-twitter"></i></a></li>
+              <li class="instagram"><a class="waves-effect waves-dark" href="https://www.instagram.com/sa_initiative/"><i class="fa fa-instagram"></i></a></li>
+              <li style="background:#de001d"><a class="waves-effect waves-dark" href="https://www.youtube.com/channel/UCCHoyz-a7yYUG_M229sLLsA/videos"><i class="fa fa-youtube"></i></a></li>
+
+            </ul>
+
+            <ul class="contact-header">
+              <li><a class="waves-effect waves-dark" href="mailto:donate@sai.ngo"><i  class="fa fa-envelope topicon"></i> <span>donate@sai.ngo</span></a></li>
+              <li><a class="waves-effect waves-dark" href="tel:800-563-6099"><i  class="fa fa-phone topicon"></i> <span>(800) 563-6099</span></a></li>  
+            </ul>
+          </div>
+
+        </div>
+      </div>
+  </header>
+<body id="page-top">
+    
+	<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+
+    <div class="container">
+		
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="South-American-Initiative.png" style="width:90%;" ></a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+       
+        <i style="font-size: 30px;" class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="/">Home</a>
+          </li>
+		  <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">About&nbsp;us</a>
+          </li>
+               <li class="nav-item mx-0 mx-lg-1">
+          <div class="dropdown nav-link py-2 px-0 px-lg-3 rounded js-scroll-trigger">
+            <button style="color: #000 !important;border:none; font-family: 'PAPYRUS';   background: none!important;    box-shadow:none!important;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              CAMPAIGNS
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#" style="font-family: sans-serif;border-bottom: 1px solid rgba(255, 255, 255, 0.05);" >Help Venezuela</a>
+              <a class="dropdown-item" href="#" style="font-family: sans-serif;border-bottom: 1px solid rgba(255, 255, 255, 0.05);">Help Venezuelan Orphans</a>
+              <a class="dropdown-item" href="#" style="font-family: sans-serif;border-bottom: 1px solid rgba(255, 255, 255, 0.05);">Help Venezuelan Hospitals</a>
+              <a class="dropdown-item" href="#" style="font-family: sans-serif;border-bottom: 1px solid rgba(255, 255, 255, 0.05);">Help Abandoned Venezuelan Pets</a>
+              <a class="dropdown-item" href="#" style="font-family: sans-serif;border-bottom: 1px solid rgba(255, 255, 255, 0.05);">Help Venezuelan Refugees</a>
+              <a class="dropdown-item" href="#" style="font-family: sans-serif;border-bottom: 1px solid rgba(255, 255, 255, 0.05);">Endangered Animal Rescue Fund</a>
+              <a class="dropdown-item" href="#" style="font-family: sans-serif;border-bottom: 1px solid rgba(255, 255, 255, 0.05);">Latin American Education Fund</a>
+
+            </div>
+          </div>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+		  <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Donations</a>
+          </li>
+		  <li style="background: #ffba00;" class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://sai.ngo/donate-now/"><b>Donate&nbsp;now</b></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<html>
+
+  <head>  
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <style>
+      .img-overlay::before {
+    content: " ";
+    position: absolute;
+    background: #293541;
+    opacity: .6;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.lista{
+  padding-top:1.5em;
+  padding-bottom:1.5em;
+  color:white;
+  font-weight:bold;
+  letter-spacing:.05em;
+  font-size:.8em;
+  padding-left:10px;
+  padding-right:10px;
+  
+}
+.lista:hover{
+
+  color:orange;
+  font-weight:bold;
+  text-decoration:none;
+}
+/*Contact sectiom*/
+.content-header{
+  font-family: 'Oleo Script', cursive;
+  color:#fcc500;
+  font-size: 45px;
+}
+
+.section-content{
+  text-align: center; 
+
+}
+#contact{
+    
+    font-family: 'Teko', sans-serif;
+  padding-top: 60px;
+  width: 100%;
+
+  height: 550px;
+  background: #3a6186; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #1d809f , #015b77); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #1d809f , #015b77); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color : #fff;    
+}
+.contact-section{
+  padding-top: 40px;
+}
+.contact-section .col-md-6{
+  width: 50%;
+}
+
+.form-line{
+  border-right: 1px solid #B29999;
+}
+.btn:hover {
+    color: #ffc107;
+}
+.form-group{
+  margin-top: 10px;
+}
+label{
+  font-size: 1.3em;
+  line-height: 1em;
+  font-weight: normal;
+}
+.form-control{
+  font-size: 1.3em;
+  color: #080808;
+}
+textarea.form-control {
+    height: 135px;
+   /* margin-top: px;*/
+}
+
+.submit{
+  font-size: 1.1em;
+  float: right;
+  width: 150px;
+  background-color: transparent;
+  color: #fff;
+
+}
+
+    </style>
+  </head>
+  
+  <body>
+    <div class="row img-overlay" style="background-image:url(bg.jpg);min-height:400px;position:relative;margin-top:80px;">
+    <h1 style="text-align:center; width:100%;font-size:4em;    position: absolute;
+    bottom: 100px;    color: white;">CONTACT US</h1>
+  <h6 style="text-align:center; width:100%;   position: absolute;
+    bottom: 60px; color: white;">Thank you for taking interest in South American Initiative. For inquiries, donations and volunteering <br/> please contact us and we will get back to you.</h6>
+    </div>
+    <div class="row" style="background:#23282d;display:block;text-align:center;">
+      <ul style="margin-bottom:0px;"> 
+        <li class="d-inline-flex">
+          <a class="lista" href="about-us.html"> About&nbsp;us </a>
+        </li>
+        <li class="d-inline-flex">
+          <a class="lista" href="who-we-are.html">Who&nbsp;we&nbsp;are </a>
+        </li>
+        <li class="d-inline-flex">
+          <a class="lista" href="campaigns-and-projects.html">Campaigns&nbsp;&&nbsp;Projects</a>
+        </li>     
+        <li class="d-inline-flex">
+          <a class="lista" href="our-impact.html">Our&nbsp;impact</a>
+        </li>         
+        <li class="d-inline-flex">
+          <a class="lista" href="top-ranked-and-top-rated.html">Top&nbsp;Ranked&nbsp;&&nbsp;Top&nbsp;Rated</a>
+        </li>
+        <li class="d-inline-flex">
+          <a class="lista" href="contact-us.html">Contact&nbsp;us</a>
+        </li>
+      </ul> 
+        
+    </div>
+    
+	<div style=" width:100%; height:250px; display:flex; margin-top:50px; margin-bottom:50px; background-color:white" >
+	
+	<div style=" padding-top:70px; margin-left:50px;" class="col-md-6">
+	<span style="font-size:20px;"> <i style=" color: #ffba00;" class="fa fa-car"></i> <b>Address:</b> Venezuela, Carabobo,La Isabelica.</span> <br/>
+	<span style="font-size:20px;" ><i style="color:#1d809f;" class="fa fa-phone"></i> <b>Phone Numer:</b> (800) 563-6099. </span> <br/>
+	<span style="font-size:20px;" ><i style=" font-size:20px;  color:#ffba00;" class="fa fa-envelope"></i>  <b>Email:</b> donate@sai.ngo </span>
+	</div>
+	
+	
+	<div class="col-md-5" style="marging-top:0px;">
+	<img style="width:100%; height:220px;" src="contacto.jpg"/>
+	</div>
+	
+	
+	
+	</div>
+	
+
+<section id="contact">
+      <div class="section-content">
+        <h1 class="section-header">Get in <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Touch with us</span></h1>
+        <h3>Please, feel free to reach out to us with any inquiry</h3>
+      </div>
+      <div class="contact-section">
+      <div class="container">
+        <form>
+          <div class="col-md-6 form-line">
+              <div class="form-group">
+                <label for="exampleInputUsername">Your name</label>
+                <input type="text" class="form-control" id="" placeholder=" Enter Name">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail">Email Address</label>
+                <input type="email" class="form-control" id="exampleInputEmail" placeholder=" Enter Email id">
+              </div>  
+              
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for ="description"> Message</label>
+                <textarea  class="form-control" id="description" placeholder="Enter Your Message"></textarea>
+              </div>
+              <div>
+
+                <button type="button" class="btn btn-default submit" style="background:#23282d;"><i class="fa fa-paper-plane" aria-hidden="true"></i>&nbsp;Send&nbsp;Message</button>
+              </div>
+              
+          </div>
+        </form>
+      </div>
+	  </div>
+</section>
+
+
+
+  </body>
+
+
+
+</html> 
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+  <div class="container">
+  	<div id="address-container">
+		<div id="usa-address">
+			<div class="footer-address d-inline-flex contactt"><i class="fa fa-car footericon"></i>8211 W Broward Blvd Ste 410 Plantation, FL 33324</div>
+			<div class="footer-phone-numb d-inline-flex contactt"><i class="fa fa-phone footericon"></i>800-563-6099</div>
+			<div class="footer-mail-address d-inline-flex contactt"><i class="fa fa-envelope footericon"></i>donate@sai.ngo</div>
+			</div>
+		</div>
+		<p class="about-footer">South American Initiative is a 501(c)(3) charitable organization, EIN 81-1747993. All the contributions are tax deductible to the extent permitted by law.<br/> No goods or services will be provided in exchange for the contribution.</p>
+		<hr>
+
+	</div>
+    <div class="container">
+    	<div class="globalgiv-logo-footer">
+<p><a href="https://www.globalgiving.org/donate/42484/south-american-initiative/"><img class="alignnone"  src="vetted_large.png" alt="#"></a></p>
+<p><a href="https://greatnonprofits.org/org/south-american-initiative-inc"><img class="alignnone"  src="2018-07-09.png" alt="#"></a></p>
+<p><a href="https://www.guidestar.org/profile/81-1747993"><img class="alignnone" style="max-height:130px" src="put-platinum2019-seal.png" alt="#" width="270" height="270"></a></p>
+<p><a href="https://www.globalgiving.org/learn/introducing-gg-rewards/"><img class="alignnone"  src="topRanked_large.png" alt="#" width="300" height="276"></a></p>
+</div>
+
+
+    </div>
+    	<div class="copy">
+      <p class="text-muted small mb-0">Copyright &copy 2019 South American Initiative. All Rights Reserved</p>
+     </div>
+
+       </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script>
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+console.log(document.documentElement.scrollTop );
+  if (document.documentElement.scrollTop > 80) {
+    document.getElementById("mainNav").style.top="0px";
+	//$('#mainNav').animate({top: "0px"},'fast');
+  }else{
+	 document.getElementById("mainNav").style.top="80px";
+	//$('#mainNav').animate({top: "80px"},'fast');
+  }
+}
+ $('#myCarousel').carousel({
+    interval: 3000,
+ })
+</script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+
+</body>
+
+</html>

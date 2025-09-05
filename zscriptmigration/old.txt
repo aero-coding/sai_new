@@ -1,0 +1,13 @@
+Analiza el siguiente contenido HTML extraído de una campaña. Tu tarea es procesarlo y devolver ÚNICAMENTE un objeto JSON válido que siga la estructura de traducciones de Laravel: {{"en": "...", "es": "..."}}.
+
+REGLAS IMPORTANTES:
+1.  El JSON debe ser tu única respuesta. No incluyas texto explicativo antes o después.
+2.  Para la clave "en", extrae el contenido principal del HTML y preséntalo en inglés. Si el contenido original ya está en inglés, límpialo y mantenlo. Si está en español, tradúcelo al inglés.
+3.  Para la clave "es", extrae el contenido principal del HTML y preséntalo en español. Si el contenido original ya está en español, límpialo y mantenlo. Si está en inglés, tradúcelo al español.
+
+EJEMPLO DE RESPUESTA ESPERADA:
+{{"en": "<p>This is the processed content in English.</p>", "es": "<p>Este es el contenido procesado en español.</p>"}}
+
+---
+CONTENIDO HTML A PROCESAR:
+{HTML_CONTENT}

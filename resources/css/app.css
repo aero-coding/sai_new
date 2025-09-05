@@ -1,0 +1,2548 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* Estilos generales que podrían afectar al header y sus elementos base */
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+a {
+    color: #db403e;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #eba53a;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+/* Estilos específicos del Header (Basados en IDs y Clases del HTML) */
+
+/* Estilos para el botón Donar desktop (oculto inicialmente) */
+#boton-donar2 {
+    font-family: Roboto;
+    font-size: 14px;
+    padding: 0px 4rem;
+    letter-spacing: 0.1px;
+    align-items: center; /* No aplica directamente a <a>, revisar si es necesario */
+    height: 40px;
+    line-height: 40px;
+    border-radius: 0px;
+    /* background-color: #eb2a31; */ /* Color rojo original */
+    background-color: #ffeded; /* Otro rojo ligeramente diferente, revisar cual usar */
+    border-color: #d14444; /* Otro rojo ligeramente diferente, revisar cual usar */
+    border-radius: 3px;
+    color: #d14444;
+    font-weight: bold;
+    display: inline-block; /* Añadido para asegurar padding/height */
+    text-decoration: none; /* Añadido */
+    /* display: none; */ /* Ya está inline en el HTML, pero se podría controlar aquí */
+}
+
+/* GUILLERMO CHANGES */
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.section {
+    width: 100%;
+}
+
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+section > div {
+    max-width: 1400px !important;
+    /* padding: 0; */
+}
+
+img {
+    /* max-width: 500px; */
+}
+
+/* Franjas */
+
+.container-base {
+    position: relative; /* Necesario para posicionar pseudo-elementos */
+    overflow: hidden; /* Oculta el exceso de las franjas */
+    width: 100%;
+    height: 100%;
+    min-height: 80px;
+}
+
+.container {
+    padding: 0;
+}
+/* Footer */
+
+.site-footer {
+    width: 100%;
+    height: auto;
+    background-color: #2b2b2b;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.globalgiv-logo-footer {
+    display: flex;
+    min-width: 255px;
+}
+
+.globalgiv-logo-footer p {
+    margin: 0 0.5rem;
+}
+
+.globalgiv-logo-footer img {
+    max-width: 50px !important;
+}
+
+.footer-left {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-left * {
+    margin-bottom: 1rem;
+}
+
+.footer-logo img {
+    height: 100px !important;
+    width: 200px !important;
+}
+
+.footer-right {
+    padding-left: 0.5rem;
+    justify-content: space-around;
+}
+
+.footer-right a {
+}
+
+.footer-right-col {
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right-col span {
+    color: #c95758;
+}
+
+.footer-right-col a {
+    color: #fff;
+}
+
+/* HOME */
+
+html,
+body {
+    font-family: "Outfit", sans-serif;
+    height: auto; /* Asegura que html y body ocupen toda la altura */
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina paddings por defecto */
+    overflow-x: hidden; /* Oculta el scroll si el slider es el único contenido */
+}
+
+.carousel {
+    height: 96vh;
+    max-height: 800px;
+    width: 100%;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+    max-width: none !important;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.08);
+}
+
+.carousel-item img {
+    max-width: none !important;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cubre el contenedor sin distorsión */
+    object-position: center; /* Enfoca el centro de la imagen */
+}
+
+.hero-carousel-btns {
+    width: 100%;
+    height: 50px;
+    z-index: 100;
+    position: absolute;
+    bottom: 9.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.hero-carousel-btns span {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: static;
+    width: auto;
+    padding: 0.5rem 1rem;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.hero-main-text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -13rem;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+    max-width: none !important;
+}
+
+.hero-text-container {
+    position: relative;
+    width: 100%;
+}
+
+.title-section {
+    max-width: 700px;
+}
+
+.hero-text-main {
+    color: #fff;
+    z-index: 20;
+    position: absolute;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.hero-text-main h1 {
+    max-width: 200px;
+    font-size: 42pt;
+    line-height: 0.8;
+    pointer-events: auto;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.hero-text-main p {
+    max-width: 460px;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    pointer-events: auto;
+}
+
+.hero-text-main .white-btn {
+    width: auto;
+    max-width: 290px;
+    display: inline-block;
+    padding: 0.3rem 1.688rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+    pointer-events: auto;
+}
+
+.hero-text-main .aux-text {
+    font-size: 0.78rem;
+    pointer-events: auto;
+}
+
+.title-section {
+    padding-right: 200px;
+    padding-top: 30px;
+    height: 460px;
+    overflow: visible;
+    background-size: 42%;
+    background-position: right 130px top 0;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 575.98px) {
+    .hero-main-text {
+        top: 5rem;
+    }
+}
+
+/* HELP OTHERS */
+
+.help-others {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    position: relative;
+}
+
+.help-others div {
+    padding: 0;
+}
+
+.help-others .cards-position {
+    min-height: 400px;
+    max-width: 1640px;
+    position: relative;
+}
+
+.help-cards-container {
+    border-radius: 3px;
+    z-index: 10;
+    width: 100%;
+    height: 400px;
+    background-color: #d94647;
+    position: absolute;
+    top: -8rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.help-cards-container h2,
+.help-cards-container h3 {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+.help-cards-container h2 {
+    font-weight: 300;
+    font-size: 1.7rem;
+}
+
+.help-cards-container h3 {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.help-cards {
+    min-height: 385px;
+    min-width: 320px;
+    margin: 1rem 0;
+    width: 31%;
+    background-color: #fe6668;
+    border-bottom-width: 15px;
+    border-bottom-style: solid;
+    border-bottom-color: #fff;
+}
+
+@media (max-width: 1152px) {
+    .help-others {
+        margin-bottom: 400px;
+    }
+
+    .help-cards-container {
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .help-others {
+        margin-bottom: 0;
+    }
+
+    .help-cards-container {
+        position: static;
+    }
+
+    .help-cards {
+        /* min-width: none; */
+        width: 95vw;
+        height: 95vw;
+    }
+
+    .cards-position {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .help-others {
+        margin-bottom: 0;
+    }
+}
+
+/* SPONSORS */
+
+.section-sponsors-container,
+.section-certifications-container {
+    position: relative;
+    padding-bottom: 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+}
+
+.section-sponsors-container::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4rem;
+    height: 2rem;
+    z-index: -1;
+    box-shadow: 0px 0px 300px 40px rgba(255, 0, 0, 1);
+}
+
+.section-sponsors-container h2,
+.section-certifications-container h2 {
+    text-align: center;
+}
+
+.sponsors,
+.certifications {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sponsor-item,
+.certifications-item {
+    text-align: center;
+}
+
+.sponsors img,
+.certifications img {
+    width: 150px;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.section-sponsors-container h2,
+.section-certifications h2 {
+    margin: 1rem 0 1rem 0;
+    color: #d94647;
+}
+
+/* ABOUT US */
+
+.section-about {
+    padding: 4rem 0; /* Espaciado vertical */
+    width: 100%;
+}
+
+/* Estilos para la imagen */
+.about-image {
+    width: 100%; /* Asegura que la imagen sea responsiva dentro de su columna */
+    max-width: none !important;
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 450px; /* Altura máxima opcional para evitar que sea demasiado alta */
+    object-fit: cover; /* Cubre el área asignada sin distorsionarse */
+    border-radius: 0.75rem; /* Bordes redondeados */
+    border: 1px solid #dee2e6; /* Borde gris claro */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilos para el botón (similar a la imagen) */
+.btn-discover {
+    border: 1px solid #fc6768; /* Borde gris */
+    color: #6c757d; /* Color de texto gris */
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    text-decoration: none; /* Quitar subrayado si se usa <a> */
+    display: inline-block; /* Para que el padding funcione correctamente */
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+.btn-discover:hover {
+    background-color: #fc6768; /* Fondo gris al pasar el mouse */
+    color: white; /* Texto blanco al pasar el mouse */
+}
+
+/* Ajuste de espaciado */
+.about-text-content h3 {
+    color: #dc3545; /* Color rojo/rosa para el subtítulo (similar a la imagen) */
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+}
+
+.about-text-content h2 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.about-text-content p {
+    color: #6c757d; /* Color de texto grisáceo */
+    margin-bottom: 1rem;
+}
+
+/* Asegurar que en móvil la imagen ocupe todo el ancho del contenedor interno */
+@media (max-width: 767.98px) {
+    .about-image-col {
+        padding: 0;
+        margin-top: 2rem; /* Añadir espacio entre texto e imagen en móvil */
+    }
+    .about-image {
+        max-height: none; /* Quitar altura máxima en móvil si es necesario */
+        border-radius: unset;
+        border: none;
+    }
+}
+
+/* VALUES */
+
+.section-values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+}
+
+.values-center {
+    margin: 0;
+    padding: 0;
+}
+
+.values-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1115px;
+}
+
+.values-container h2 {
+    width: 100%;
+    color: #d94647;
+}
+
+.values-card {
+    margin-top: 1rem;
+    width: 30%;
+    min-width: 315px;
+    min-height: 385px;
+    background-color: #d94647;
+    border-radius: 5px;
+}
+
+.values-card .card-top {
+    height: 43%;
+}
+
+.values-card .card-bottom {
+    height: 57%;
+    width: 100%;
+    padding: 1rem;
+}
+
+.values-card .card-bottom .card-bottom-container {
+    justify-content: space-evenly;
+}
+
+.values-card .card-bottom h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 0.9;
+    margin-bottom: 0.5rem;
+}
+
+.values-card .card-bottom p {
+    padding: 0;
+    height: auto;
+}
+
+@media (max-width: 1330px) {
+    .values-container {
+        justify-content: center;
+    }
+
+    .values-card {
+        margin: 1rem 0.5rem;
+        padding: 0;
+        min-height: 385px;
+        min-width: 320px;
+    }
+}
+
+@media (max-width: 701px) {
+}
+
+@media (max-width: 701px) {
+    .values-container {
+        padding: 0;
+    }
+
+    .values-card {
+        margin: 1rem 0;
+        width: 95vw;
+        height: 95vw;
+    }
+}
+
+/* CERTIFICATIONS */
+
+.section-certifications {
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.certifications {
+    gap: 80px;
+}
+
+.certifications img {
+    width: auto;
+    height: 80px;
+}
+
+/* NEWS */
+
+.red-top-shadow {
+    position: relative;
+}
+
+.red-top-shadow::before {
+    content: "";
+    position: absolute;
+    top: 7rem;
+    left: 50%;
+    width: 3rem;
+    height: 3rem;
+    z-index: -1;
+    box-shadow: 0px 0px 300px 70px rgba(255, 0, 0, 1);
+}
+
+.section-news {
+    display: flex;
+    justify-content: center;
+    background-color: #fd6768;
+    background-size: 70%;
+    background-position: right -70% top -10%;
+    background-repeat: no-repeat;
+    padding: 4rem 0;
+    margin: 0;
+    color: #fff;
+}
+
+.news-text {
+    display: flex;
+    border-top: 1px solid white;
+    padding-top: 2rem;
+}
+
+.news-text h2 {
+    padding: 0;
+    margin: 0;
+    width: 40%;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.news-text-right {
+    width: 60%;
+    padding-right: 3rem;
+}
+
+.news-text-right p {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.news-text-right a {
+    font-size: 1.5rem;
+    color: #fff0a1;
+}
+
+.news-cards-col {
+    margin-top: 2rem;
+}
+
+.news-cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.news-card {
+    margin-bottom: 2rem;
+    max-height: 350px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border-top-right-radius: 0;
+}
+
+.news-card .card-top .card-title-position {
+    text-align: start;
+}
+
+.news-card .card-top .card-title-position h4 {
+    border-top-left-radius: 0 !important;
+    padding-right: 10%;
+    background-color: #d94647;
+    color: #fff;
+}
+
+.blue-cl {
+    background-color: #2261aa;
+    color: #fff;
+}
+
+.yellow-cl {
+    background-color: #fff0a1;
+    color: #000;
+}
+
+.red-cl {
+    background-color: #fd6768;
+    color: #fff;
+}
+
+.news-card .card-bottom-container {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    color: #494949;
+}
+
+.new-info {
+    width: 100%;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.new-info-btn {
+    /* Borde delgado */
+    border: 1px solid #fc6768;
+    padding: 0.2rem 0.5rem;
+    /* Light transition */
+    transition: all 0.3s ease;
+}
+
+.new-info-btn:hover {
+    background-color: #fc6768;
+    color: #fff;
+}
+
+.news-card-top {
+    width: 100%;
+    height: 60%;
+    background-color: #fff;
+    border-top-left-radius: 5px;
+}
+
+.card-top img {
+    border-top-left-radius: 5px;
+}
+
+.news-card-text {
+    font-size: 18pt;
+    overflow: hidden;
+    max-height: 70px;
+}
+
+.news-card-bot {
+    width: 100%;
+    height: 40%;
+    background-color: #d14444;
+    border-radius: 0 0px 5px 5px;
+}
+
+@media (max-width: 1092px) {
+    .news-card.news-main-card {
+        width: 100%;
+    }
+    .news-cards-container {
+    }
+    .news-card {
+        width: 47%;
+    }
+}
+
+@media (max-width: 839px) {
+    .news-cards-container {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    .news-text {
+        flex-direction: column;
+        margin: 0;
+        padding-top: 0;
+        border: none;
+    }
+
+    .news-text h2 {
+        width: 100%;
+        padding-top: 2rem;
+        border-top: 1px solid white;
+        margin-bottom: 2rem;
+    }
+
+    .news-text-right {
+        width: 100%;
+    }
+
+    .news-text-right p,
+    .news-text-right a {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    .news-text-right {
+        padding: 0;
+    }
+
+    .news-card {
+        margin-right: 1rem;
+    }
+}
+
+/* TESTIMONIALS */
+
+/* TESTIMONIALS - ESTILOS ESPECÍFICOS PARA EVITAR CONFLICTOS */
+
+/* Aseguramos que los estilos base de la sección no interfieran */
+.section-testimonials {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Previene desbordamiento general */
+    width: 100%; /* Asegura que ocupe el ancho */
+    position: relative; /* Restablece position si fue alterada */
+    margin-bottom: 2rem; /* Espaciado inferior */
+    height: auto !important; /* ANULA la altura fija del HOME */
+    max-height: none !important; /* ANULA la altura máxima del HOME */
+}
+
+/* Parte superior (no necesita cambios drásticos de especificidad) */
+.section-testimonials .testimonials-top {
+    display: flex;
+    width: 70%;
+    margin-bottom: 2rem;
+}
+
+.section-testimonials .testimonials-right {
+    width: 50%;
+    padding-right: 1rem;
+}
+
+.section-testimonials .testimonials-right h2 {
+    color: #d94647;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.section-testimonials .testimonials-right h3 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 900;
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+}
+
+.section-testimonials .testimonials-left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #9d918d;
+    padding-left: 1rem;
+}
+
+.section-testimonials .testimonials-left p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Contenedor del carrusel - AUMENTAMOS ESPECIFICIDAD */
+.section-testimonials .carousel {
+    position: relative;
+    width: 80%; /* Restablece el ancho deseado */
+    max-width: 1000px; /* Restablece el max-width */
+    overflow: visible; /* Clave para que funcione el sliding */
+    margin: 0 auto;
+    height: auto !important; /* ANULA la altura fija del HOME */
+    max-height: none !important; /* ANULA la altura máxima del HOME */
+}
+
+/* Pista que contiene los slides - AUMENTAMOS ESPECIFICIDAD */
+.section-testimonials .carousel-track {
+    display: flex; /* FUNDAMENTAL para la disposición horizontal */
+    transition: transform 0.5s ease-in-out;
+    height: auto; /* Asegura altura automática */
+    width: auto; /* Asegura anchura automática */
+    position: static; /* Resetea position si es alterada */
+}
+
+/* Cada slide individual - AUMENTAMOS ESPECIFICIDAD */
+.section-testimonials .carousel-item {
+    min-width: 100%; /* Clave para el sliding */
+    width: 100%; /* Asegura que ocupe el 100% del track */
+    flex: 0 0 100%; /* Equivalente a min-width/width en flexbox */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: relative;
+    opacity: 0.5;
+    transform: scale(0.85);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    height: auto !important; /* ANULA la altura fija del HOME y permite que el contenido defina la altura */
+    /* Reseteamos propiedades que puedan causar stacking */
+    float: none;
+    clear: none;
+    margin: 0; /* Resetea márgenes */
+    padding: 0; /* Resetea paddings */
+    display: block; /* Los items son bloques dentro del flex track */
+}
+
+/* Estilo del slide activo (visible) - AUMENTAMOS ESPECIFICIDAD */
+.section-testimonials .carousel-item.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Estructura de tarjeta dentro del slide - AUMENTAMOS ESPECIFICIDAD */
+.section-testimonials .carousel-card {
+    display: flex; /* Necesario para dividir left/right */
+    flex-direction: row; /* Asegura dirección horizontal */
+    align-items: stretch;
+    justify-content: center;
+    min-height: 20rem; /* Altura mínima deseada */
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%; /* Ocupa todo el .carousel-item */
+    height: 100%; /* Ocupa toda la altura disponible del item */
+}
+
+/* Parte izquierda de la tarjeta (texto) - AUMENTAMOS ESPECIFICIDAD */
+.section-testimonials .carousel-card-left {
+    width: 65%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    box-sizing: border-box;
+    height: 100%; /* Asegura que ocupe la altura de la tarjeta */
+}
+
+.section-testimonials .carousel-profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+
+/* Imagen de perfil - ANULANDO CONFLICTOS */
+.section-testimonials .carousel-profile img {
+    max-width: 50px !important; /* Anula el max-width global */
+    max-height: 50px !important; /* Añadido por consistencia */
+    width: 50px !important; /* Tamaño fijo */
+    height: 50px !important; /* Tamaño fijo */
+    border-radius: 50%;
+    object-fit: cover; /* Mantenemos cover */
+    border-style: none; /* Resetea border si es necesario */
+    vertical-align: middle; /* Resetea alineación */
+}
+
+.section-testimonials .carousel-profile span {
+    margin-left: 0.7rem;
+    font-weight: bold;
+}
+
+.section-testimonials .carousel-comment {
+    font-size: 1.14rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+/* Botón dentro de la tarjeta - AUMENTAMOS ESPECIFICIDAD */
+.section-testimonials .about-discover-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #4a3a36;
+    text-decoration: none;
+    border: 1.5px solid #ff6b6b;
+    background: transparent;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.section-testimonials .about-discover-btn:hover {
+    background: #ff6b6b;
+    color: white;
+}
+
+/* Parte derecha de la tarjeta (imagen) - AUMENTAMOS ESPECIFICIDAD */
+.section-testimonials .carousel-card-right {
+    width: 35%;
+    border-radius: 0 5px 5px 0;
+    overflow: hidden;
+    height: 100%; /* Asegura que ocupe la altura de la tarjeta */
+    position: relative; /* Contexto para la imagen si fuera necesario */
+}
+
+/* Imagen derecha de la tarjeta - ANULANDO CONFLICTOS */
+.section-testimonials .carousel-card-right img {
+    width: 100% !important; /* Anula width conflictivo */
+    height: 100% !important; /* Anula height conflictivo */
+    object-fit: cover !important; /* Anula object-fit conflictivo */
+    object-position: center !important; /* Anula object-position conflictivo */
+    max-width: none !important; /* ANULA el max-width global y el del HOME */
+    max-height: none !important; /* ANULA el max-height global si existe */
+    display: block;
+    border-style: none; /* Resetea border si es necesario */
+    vertical-align: middle; /* Resetea alineación */
+    border-radius: 0; /* Asegura que no tenga borde redondeado propio */
+}
+
+/* Contenedor de los botones de navegación - AUMENTAMOS ESPECIFICIDAD */
+.section-testimonials .carousel-btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.section-testimonials .carousel-btns span {
+    padding-top: 0.5rem;
+    margin: 0 1.5rem;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Botones de Anterior/Siguiente - AUMENTAMOS ESPECIFICIDAD */
+.section-testimonials .prev-carousel,
+.section-testimonials .next-carousel {
+    z-index: 10;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 3rem;
+    border-radius: 5px;
+    line-height: 1;
+}
+
+.section-testimonials .prev-carousel:hover,
+.section-testimonials .next-carousel:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+/* Mobile styles for Testimonials */
+@media (max-width: 767px) {
+    /* Adjust the top section layout for smaller screens */
+    .section-testimonials .testimonials-top {
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-testimonials .testimonials-right,
+    .section-testimonials .testimonials-left {
+        width: 100%; /* Full width on mobile */
+        padding: 0; /* Remove horizontal padding */
+        margin-bottom: 1rem; /* Space between top sections */
+        text-align: start; /* Center text */
+        justify-content: center; /* Center content if using flex */
+    }
+
+    .section-testimonials .testimonials-right h2 {
+        font-size: 1.1rem; /* Adjust font size */
+    }
+
+    .section-testimonials .testimonials-right h3 {
+        font-size: 1.6rem; /* Adjust font size */
+    }
+
+    .section-testimonials .testimonials-left p {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+
+    /* Adjust carousel container width */
+    .section-testimonials .carousel {
+        width: 90%; /* Adjust carousel width for mobile */
+        max-width: none; /* Remove max-width constraint */
+        overflow: hidden; /* Keep overflow hidden for the carousel track */
+    }
+
+    /* Ensure carousel items are fully visible on mobile */
+    .section-testimonials .carousel-item {
+        opacity: 1;
+        transform: scale(1);
+        padding: 0 0.5rem; /* Add some horizontal padding to items if needed */
+        box-sizing: border-box;
+    }
+
+    /* Stack elements within the carousel card vertically */
+    .section-testimonials .carousel-card {
+        flex-direction: column; /* Stack main sections vertically */
+        align-items: center; /* Center content horizontally */
+        min-height: auto; /* Remove minimum height */
+        height: auto; /* Auto height based on content */
+        padding: 1rem; /* Add padding inside the card */
+    }
+
+    /* Make children of carousel-card-left direct flex items of carousel-card */
+    .section-testimonials .carousel-card-left {
+        display: contents; /* The container box is removed, children become direct items */
+        width: 100%; /* Not strictly needed with display: contents */
+        padding: 0; /* Remove padding */
+        border: none; /* Remove borders */
+        height: auto;
+    }
+
+    /* Style and order the profile section (now a direct child) */
+    .section-testimonials .carousel-profile {
+        width: 100%; /* Full width */
+        order: 1; /* First element */
+        margin-bottom: 1rem; /* Space below profile */
+        justify-content: center; /* Center profile content */
+    }
+
+    /* Style and order the image container */
+    .section-testimonials .carousel-card-right {
+        width: 100%; /* Full width */
+        border-radius: 0; /* Remove border radius */
+        overflow: hidden; /* Keep overflow hidden */
+        height: auto; /* Auto height */
+        position: static; /* Reset position */
+        order: 2; /* Second element (after profile) */
+        margin-bottom: 1.5rem; /* Space below the image */
+    }
+
+    /* Ensure the image fills its container */
+    .section-testimonials .carousel-card-right img {
+        width: 100% !important; /* Override existing width */
+        height: auto !important; /* Allow height to adjust proportionally */
+        object-fit: cover !important; /* Ensure image covers area */
+        object-position: center !important; /* Center the image */
+        max-width: none !important; /* Override max-width */
+        max-height: none !important; /* Override max-height */
+        display: block;
+    }
+
+    /* Style and order the comment paragraph (now a direct child) */
+    .section-testimonials .carousel-comment {
+        width: 100%; /* Full width */
+        order: 3; /* Third element (after image) */
+        margin-bottom: 1.5rem; /* Space below comment */
+        text-align: center; /* Center text */
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    /* Style and order the button (now a direct child) */
+    .section-testimonials .about-discover-btn {
+        width: auto; /* Allow button width to be determined by content */
+        order: 4; /* Fourth element */
+        align-self: center; /* Center the button itself horizontally */
+        padding: 12px 25px; /* Adjust padding */
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    /* Adjust button container width and spacing */
+    .section-testimonials .carousel-btns {
+        margin-top: 1rem; /* Adjust margin */
+    }
+
+    .section-testimonials .prev-carousel,
+    .section-testimonials .next-carousel {
+        font-size: 2rem; /* Adjust button size */
+    }
+
+    .section-testimonials .carousel-btns span {
+        margin: 0 0.8rem; /* Adjust spacing around "READ REVIEWS" */
+        font-size: 0.9rem;
+    }
+}
+
+/* FIN TESTIMONIALS */
+
+/* NUMBERS */
+
+.section-numbers {
+    margin-bottom: 7rem;
+}
+
+.numbers-container {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+}
+
+.numbers-container h2 {
+    overflow: visible;
+    z-index: 5;
+    position: relative;
+    background-color: #d94647;
+    clip-path: polygon(0 0, 89% 0, 100% 100%, 0% 100%);
+    color: #fff;
+    margin: 0;
+    padding: 0.5rem 6rem 1.4rem 1rem;
+}
+
+.numbers-container .clipped-container-stripes::after,
+.numbers-container .clipped-container-stripes::before {
+    transform: skewX(27deg);
+}
+
+@media (max-width: 400px) {
+    .numbers-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+/* Franjas Colores */
+
+.numbers-container h2 span {
+    overflow: visible;
+}
+
+.numbers-container h2 span::after {
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-color: #d94647;
+    clip-path: polygon(0 0, 89% 0, 100% 100%, 0% 100%);
+}
+
+.numbers-container h2 span::before {
+    top: 0;
+    left: 0;
+    z-index: -2;
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background-color: #2161ac;
+    clip-path: polygon(0 0, 89% 0, 100% 100%, 0% 100%);
+}
+
+/* ------------------------- */
+
+.numbers-cards-container {
+    width: 100%;
+    padding: 3rem;
+    border: 2px solid #ccc;
+    border-radius: 0.5rem;
+    background-color: white;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 0;
+}
+
+.numbers-cards-container p {
+    color: #958984;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 55%;
+    margin: 0;
+}
+
+@media (max-width: 1164px) {
+    .numbers-cards-container p {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .numbers-cards-container {
+        border: none;
+        box-shadow: none;
+        max-width: auto;
+    }
+}
+
+.numbers {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.numbers-card {
+    width: 40%;
+    min-width: 335px;
+    background-color: #fff;
+    margin: 1.5rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid #9c9c9c;
+    flex-shrink: 1.5;
+}
+
+.numbers-card .icon {
+    width: 4rem;
+    height: 4rem;
+    min-width: 60px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #979797;
+    border-radius: 1.3rem;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.numbers-card .icon span {
+    font-size: 0.5rem;
+    color: #979797;
+}
+
+.numbers-card .card-number {
+    font-size: 3.5rem;
+    color: #4d4b4b;
+    margin: 0 1rem;
+}
+
+.numbers-card:nth-child(3) .card-number {
+    color: #2563ab;
+}
+
+.numbers-card .card-title-container {
+    height: 3rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.numbers-card .card-title {
+    color: #535353;
+    font-size: 1.5rem;
+}
+
+.read-more {
+    position: absolute;
+    bottom: -3.7rem;
+    right: 3rem;
+}
+
+/* HELP */
+.section-help {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 7rem;
+}
+
+.help-top {
+    width: 100%;
+    display: flex;
+    /* CAMBIO CLAVE: Hacer que los elementos flex se estiren a la altura completa */
+    align-items: stretch;
+    justify-content: space-evenly;
+    /* Añadir bordes y border-radius al contenedor flex para que cubra ambos lados */
+    border: 2px solid #979797;
+    border-radius: 5px;
+    overflow: hidden; /* Oculta el contenido que se desborde en las esquinas redondeadas */
+}
+
+.help-container {
+    max-width: 1115px;
+}
+
+.help-top-left {
+    width: 55%;
+    background-color: #d94647;
+    padding: 3rem;
+    /* Eliminar bordes y border-radius específicos aquí, se manejan en .help-top */
+    border: none;
+    border-radius: 0;
+    /* Asegurar que ocupe la altura completa dentro de su flex container */
+    flex-grow: 1; /* Permite que crezca si hay espacio, útil en flex */
+}
+
+.help-top-left h2 {
+    color: #fff1a2;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+.help-top-left h3 {
+    color: #fff;
+    margin: 0;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+    width: 70%; /* Mantener el ancho del texto si es necesario */
+}
+
+.donate-btn {
+    display: inline-block;
+    padding: 1.15rem 4rem;
+    font-size: 1.4rem;
+    background-color: #fff1a2;
+    color: #403631;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+.donate-btn:hover {
+    background: #d7c96c;
+    color: white;
+}
+
+.help-top-right {
+    width: 45%;
+    /* Mantener overflow: hidden; si deseas recortar la imagen */
+    overflow: hidden;
+    display: flex;
+    /* align-content y justify-items no son necesarios para un solo item flex */
+    align-items: stretch; /* Asegura que el hijo (img) se estire */
+    justify-content: flex-start; /* Alinear la imagen al inicio horizontalmente (izquierda) */
+    /* Asegurar que ocupe la altura completa dentro de su flex container */
+    flex-grow: 1; /* Permite que crezca si hay espacio */
+}
+
+.help-top-right img {
+    display: block;
+    width: 100%; /* Ocupa el 100% del ancho del contenedor derecho */
+    height: 100%; /* Ocupa el 100% de la altura del contenedor derecho */
+    object-fit: cover; /* Cubre el área manteniendo la relación de aspecto */
+    /* CAMBIO CLAVE: Ajusta la posición del contenido visible de la imagen */
+    object-position: center; /* Mantiene la parte derecha de la imagen visible, recortando la izquierda */
+    max-height: none; /* Asegura que no haya un límite de altura que impida el estiramiento */
+}
+
+/* Estilos para help-bottom y contacs-cards (no cambian según tu solicitud) */
+.help-bottom {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Añadido por si las tarjetas necesitan envolverse en móvil */
+    gap: 1rem; /* Espacio entre tarjetas si se envuelven */
+}
+
+.contacs-cards {
+    /* Puedes ajustar el width aquí o usar flex-basis para hacerlo responsive */
+    width: calc(33% - 1rem); /* Ejemplo para 3 columnas con gap */
+    /* Añadir estilos de borde, padding, etc. si es necesario */
+}
+
+/* Media query para ajustar help-bottom en móvil */
+@media (max-width: 767px) {
+    .help-bottom {
+        flex-direction: column; /* Apila las tarjetas verticalmente en móvil */
+        gap: 1.5rem; /* Espacio entre tarjetas apiladas */
+    }
+    .contacs-cards {
+        width: 100%; /* Ocupa todo el ancho en móvil */
+    }
+
+    .section-help {
+        margin: 0;
+    }
+
+    .help-container {
+        padding: 0;
+    }
+
+    .help-top {
+        border: none !important;
+        border-right: none !important;
+        border-radius: 0;
+        flex-wrap: wrap;
+    }
+
+    .help-top-right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .help-top-right img {
+        height: auto;
+    }
+
+    .help-top-left {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .help-top-left h2 {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .help-top-left h3 {
+        font-size: 1.5rem;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .contacs-cards {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 575px) {
+}
+
+.contacs-cards h4 {
+    color: #d94647;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-bottom: 2rem;
+}
+
+.contacs-cards p {
+    width: 90%;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.contacs-cards .about-discover-btn {
+    width: 50%;
+    text-align: center;
+}
+
+/* SUBSCRIBE */
+
+.section-subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.subscribe-container {
+    display: flex;
+    padding: 0 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-top {
+    background-color: #f56161;
+    width: 100%;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+
+.subscribe-logo,
+.subscribe-text,
+.subscribe-form {
+    margin-bottom: 1.5rem;
+}
+
+.subscribe-logo {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.subscribe-logo img {
+    max-width: 7rem !important;
+}
+
+.subscribe-text {
+    max-width: 400px;
+    width: 30%;
+}
+
+.subscribe-text h2 {
+    color: #f8d8a5;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.subscribe-text h3 {
+    margin: 0;
+    color: white;
+    font-size: 1.85rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+/* form input */
+
+.subscribe-form {
+    margin-top: 1rem;
+    min-width: 450px;
+    width: 40%;
+    padding: 1px 1px 1px 2rem;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    background-color: #fff;
+    border: 2px solid #979797;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.subscribe-form input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 20px;
+    outline: none;
+    width: 250px;
+}
+
+.subscribe-form-btn {
+    background-color: #f56161;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.subscribe-form-btn:hover {
+    background-color: rgb(254, 227, 227);
+    color: #f0605b;
+}
+
+/* --------------------------------- */
+
+.subscribe-bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #ffeded;
+}
+
+.subscribe-bottom a {
+    text-decoration: underline;
+}
+
+.contact-wsp,
+.follow-us {
+    display: flex;
+    align-items: center;
+    margin: 0.8rem 2rem;
+    padding: 1.3rem 0;
+}
+
+.contact-wsp {
+    width: 30%;
+    margin-right: 0;
+}
+
+.follow-us {
+    width: 70%;
+    margin-left: 0;
+    border-left: 1px solid #9797979e;
+    padding-left: 3rem;
+}
+
+.follow-us .media-icon:nth-child(1) {
+    background-color: #ff9174;
+}
+
+.follow-us .media-icon:nth-child(2) {
+    background-color: #7aaae0;
+}
+
+.follow-us .media-icon:nth-child(3) {
+    background-color: #fe6668;
+}
+
+.follow-us .media-icon:nth-child(4) {
+    background-color: #2261aa;
+}
+
+.media-icon {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 5px;
+    margin-right: 2rem;
+}
+
+.wsp-icon {
+    background-color: #99e333;
+}
+
+.social-container div {
+    flex-direction: column;
+}
+
+/* aaaaaaaaaaaaaaaaaaa */
+
+/* Estilos para la nueva sección social/contacto */
+.social-contact-section {
+    background-color: #ffeded;
+    border-top: 1px solid #eee;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.social-left {
+    border-right: 1px solid #8e8e8e;
+    padding-right: 1rem;
+}
+
+/* Estilo base para los íconos cuadrados */
+.social-icon {
+    display: inline-block; /* O usa d-flex si prefieres centrar contenido interno */
+    width: 35px; /* Ancho del cuadrado */
+    height: 35px; /* Alto del cuadrado */
+    margin-right: 0.3rem;
+    border-radius: 5px;
+    /* border-radius: 4px; */ /* Esquinas ligeramente redondeadas, opcional */
+    text-decoration: none; /* Quitar subrayado del enlace */
+    transition: opacity 0.2s ease-in-out; /* Efecto suave al pasar el mouse */
+    color: white; /* Color del ícono (si usas Font Awesome) */
+    font-size: 1.2rem; /* Tamaño del ícono */
+}
+
+.social-icon:hover {
+    opacity: 0.85; /* Efecto al pasar el mouse */
+}
+
+/* Ícono específico de WhatsApp */
+.social-icon.whatsapp-icon {
+    background-color: #25d366; /* Verde de WhatsApp */
+}
+
+/* Íconos de Placeholder - Colores basados en tu imagen */
+.social-icon.social-placeholder.color-1 {
+    background-color: #f5824d; /* Naranja */
+}
+.social-icon.social-placeholder.color-2 {
+    background-color: #71a6de; /* Azul claro */
+}
+.social-icon.social-placeholder.color-3 {
+    background-color: #65c3d8; /* Celeste (ajustado) */
+}
+.social-icon.social-placeholder.color-4 {
+    background-color: #3b5998; /* Azul oscuro (tipo Facebook) */
+}
+
+/* Estilo para los enlaces de texto */
+.contact-link {
+    color: #0d6efd; /* Azul estándar de Bootstrap o el color que prefieras */
+    font-weight: 500; /* Un poco más de peso */
+    font-size: 0.9rem; /* Tamaño de fuente */
+}
+
+.contact-link:hover {
+    text-decoration: underline !important; /* Subrayar al pasar el mouse */
+}
+
+/* Estilos para el separador vertical (si usas Bootstrap 5.2+) */
+.vr {
+    height: 35px; /* Ajusta la altura para que coincida con los íconos */
+    border-left-color: rgba(0, 0, 0, 0.15); /* Color más sutil */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 767.98px) {
+    /* Abajo del breakpoint 'md' de Bootstrap */
+    .social-contact-section .row > div {
+        /* Centrar contenido cuando las columnas se apilan */
+        /* justify-content-center ya está en las clases d-flex */
+        text-align: center; /* Centrar texto si es necesario */
+    }
+    .social-contact-section .vr {
+        display: none; /* Ocultar separador en móvil */
+    }
+}
+
+/* aaaaaaaaaaaaaaaaaaa */
+
+@media (max-width: 767px) {
+    .section-subscribe {
+        padding: 0 0.3rem;
+    }
+
+    .subscribe-top {
+        justify-content: flex-start;
+    }
+
+    .subscribe-text {
+        width: 100%;
+    }
+    .subscribe-form-btn {
+        /* light border white */
+        border: solid 2px #fff;
+    }
+
+    .subscribe-form {
+        min-width: 250px;
+    }
+
+    .subscribe-bottom {
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-wsp,
+    .follow-us {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social-column {
+        flex-direction: column;
+    }
+
+    .social-left {
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 1rem;
+    }
+
+    .social-contact-section {
+        background-color: #fff;
+    }
+
+    .contact-link {
+        font-size: 1.2rem;
+    }
+}
+
+/* CARD STYLES */
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-top,
+.card-bottom {
+    width: 100%;
+}
+
+.card-top {
+    height: 55%;
+    /* max-height: 235px; */
+    position: relative;
+    overflow: hidden;
+}
+
+.card-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-top .card-title-position {
+    position: absolute;
+    width: 100%;
+    bottom: 0.5rem;
+    left: 0;
+    text-align: center;
+}
+
+.card-title-position h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    border-radius: 5px;
+}
+
+.help-others .card-title-position h4 {
+    background-color: #fff;
+}
+
+.card-bottom {
+    height: 45%;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-bottom-container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.card-bottom p {
+    font-size: 0.9rem;
+    width: 100%;
+    height: 60%;
+    padding: 0.5rem;
+}
+
+.white-btn {
+    text-decoration: none;
+    display: block;
+    padding: 0.4rem 6rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #d94647;
+    background-color: #ffeded;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    align-self: flex-start;
+    white-space: nowrap;
+}
+
+.card-bottom .white-btn {
+    width: 100%;
+    text-align: center;
+}
+
+.white-btn:hover {
+    background-color: #ffb4b4;
+}
+
+@media (max-width: 768px) {
+    .card-top {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* DETAILS */
+
+.carousel.flare-container::before,
+.flare-container::before {
+    z-index: 1;
+    content: ""; /* Necesario para que el pseudo-elemento se muestre */
+    position: absolute; /* Posicionamiento absoluto dentro del contenedor */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* La propiedad background contendrá el degradado radial */
+    background: radial-gradient(
+        circle at bottom left,
+        rgba(254, 87, 87, 0.882) 0%,
+        rgba(254, 87, 87, 0.675) 10%,
+        rgba(254, 87, 87, 0.353) 20%,
+        transparent 60%
+    );
+    pointer-events: none;
+}
+
+.carousel.flare-container::after,
+.flare-container::after {
+    z-index: 1;
+    content: ""; /* Necesario para que el pseudo-elemento se muestre */
+    position: absolute; /* Posicionamiento absoluto dentro del contenedor */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* La propiedad background contendrá el degradado radial */
+    background: radial-gradient(
+        circle at bottom,
+        rgba(254, 87, 87, 0.882) 0%,
+        rgba(254, 87, 87, 0.675) 10%,
+        rgba(254, 87, 87, 0.353) 20%,
+        transparent 30%
+    );
+    pointer-events: none;
+}
+
+.subscribe-container {
+    position: relative;
+}
+
+.subscribe-top::before {
+    z-index: 1;
+    content: ""; /* Necesario para que el pseudo-elemento se muestre */
+    position: absolute; /* Posicionamiento absoluto dentro del contenedor */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* La propiedad background contendrá el degradado radial */
+    background: radial-gradient(
+        circle at 100% 65%,
+        rgba(255, 242, 1, 0.222) 0%,
+        transparent 10%
+    );
+    pointer-events: none;
+}
+/* NEWS CARDS */
+
+/* MODAL */
+
+/* Estilos para el Modal/Lightbox */
+.image-modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Se queda fijo en la pantalla */
+    z-index: 1000; /* Por encima de otros contenidos */
+    padding-top: 50px; /* Espacio desde arriba */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permite scroll si la imagen es muy grande */
+    background-color: rgba(0, 0, 0, 0.85); /* Fondo negro semitransparente */
+}
+
+.image-modal.show {
+    display: flex; /* Usar flex para centrar */
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+/* Contenido del Modal (la imagen expandida) */
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 85vh; /* Altura máxima relativa al viewport height */
+    border-radius: 5px;
+}
+
+/* Leyenda (opcional, si usas el alt de la imagen) */
+.modal-caption {
+    margin: 15px auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+/* Botón de Cierre */
+.close-modal-btn {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    user-select: none; /* Evitar selección de texto */
+}
+
+header {
+    width: 100%;
+    z-index: 150;
+    position: relative;
+}
+
+/* HEADER */
+
+.mobile-header {
+    background-color: #d94647;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    width: 100%;
+}
+
+.header-logo-container {
+    position: relative;
+    padding: 0.2rem 4rem 0.2rem 1.3rem;
+}
+
+.header-logo-container img {
+    max-height: 45px;
+}
+
+/* --- Ejemplo: Contenedor con Borde Derecho Inclinado (hacia la izquierda) y Franjas --- */
+
+.clipped-container-stripes {
+    /* background-color: #d94647; */
+    color: white;
+    /* Clip-path modificado para inclinar hacia la izquierda */
+    /* Puntos: top-left, top-right, bottom-right(desplazado), bottom-left */
+    /* calc(100% - 50px) define dónde termina la inclinación en el borde inferior */
+    /* clip-path: polygon(0% 0%, calc(100% - 23px) 0%, 100% 100%, 0% 100%); */
+}
+
+.clipped-container-stripes::before,
+.clipped-container-stripes::after {
+    content: ""; /* Necesario para que los pseudo-elementos se muestren */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 0;
+    bottom: 0; /* Ocupa toda la altura */
+    /* Inclinación hacia la derecha (ángulo positivo) para que visualmente se incline a la izquierda en el borde derecho */
+    /* El ángulo debe coincidir visualmente con el clip-path */
+    transform: skewX(15deg);
+    /* Origen de la transformación en la esquina inferior derecha */
+    transform-origin: bottom right;
+    /* Importante: Los pseudo-elementos también serán cortados por el clip-path del padre */
+}
+
+/* Estilo para la franja amarilla (::before) */
+.clipped-container-stripes::before {
+    background-color: #2161ac; /* Amarillo */
+    width: 17px; /* Ancho de la franja amarilla */
+    /* Posición desde la derecha, dejando espacio para la azul */
+    /* Puede requerir ajuste fino debido al skew y origin */
+    right: 17px;
+    z-index: 2; /* Detrás de la azul */
+}
+
+/* Estilo para la franja azul (::after) */
+.clipped-container-stripes::after {
+    background-color: #fff0a1; /* Azul */
+    width: 17px; /* Ancho de la franja azul */
+    /* Pegada al borde derecho */
+    /* Puede requerir ajuste fino debido al skew y origin */
+    right: 0;
+    z-index: 2; /* Encima de la amarilla */
+}
+
+/* Franjas */
+
+/* --- Estilos Base --- */
+body.offcanvas-open {
+    overflow: hidden; /* Evita el scroll del body cuando el menú está abierto */
+}
+
+/* --- Botón Toggler (Hamburguesa) --- */
+.navbar-toggler {
+    background-color: transparent;
+    padding: 0.5rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Mostrar el botón en pantallas pequeñas (Ejemplo si NO usas Bootstrap) */
+@media (max-width: 991.98px) {
+    /* Coincide con el breakpoint lg de Bootstrap */
+    .navbar-toggler:not(.d-lg-none) {
+        /* Aplica si no estás usando d-lg-none */
+        display: inline-block;
+    }
+    /* Ocultar navegación de escritorio si la tienes */
+    /* .desktop-nav { display: none; } */
+}
+
+@media (max-width: 1498px) {
+    .desktop-header-left {
+        padding: 0;
+    }
+    .header-logo-container {
+        min-width: 183px;
+    }
+
+    .desktop-top::before {
+        width: 25px !important;
+        left: -25px !important;
+    }
+}
+
+@media (max-width: 1150px) {
+    .desktop-top::before {
+        content: none !important;
+    }
+}
+
+@media (max-width: 1150px) {
+    .desktop-top::before {
+        content: none !important;
+    }
+}
+
+/* --- Menú Off-Canvas --- */
+.offcanvas-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px; /* Ancho del menú */
+    max-width: 85%; /* Máximo ancho en pantallas muy pequeñas */
+    height: 100%;
+    background-color: #ffffff; /* Color de fondo del menú */
+    z-index: 1050; /* Por encima del overlay */
+    overflow-y: auto; /* Scroll si el contenido es largo */
+    box-shadow: -3px 0px 15px rgba(0, 0, 0, 0.15); /* Sombra lateral */
+
+    /* Estado inicial: fuera de pantalla a la derecha */
+    transform: translateX(100%);
+    transition: transform 0.35s ease-in-out;
+    visibility: hidden; /* Oculto inicialmente para accesibilidad */
+}
+
+.offcanvas-menu.is-open {
+    transform: translateX(0); /* Desliza hacia adentro */
+    visibility: visible; /* Visible cuando está abierto */
+}
+
+/* --- Botón de Cierre Dentro del Menú --- */
+.close-menu-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: #888;
+    background: none;
+    border: none;
+    padding: 0;
+    line-height: 1;
+    cursor: pointer;
+}
+.close-menu-btn:hover {
+    color: #333;
+}
+
+/* --- Estilos de los Enlaces del Menú --- */
+.offcanvas-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px; /* Espacio para el botón de cierre */
+}
+
+.offcanvas-menu li {
+    border-bottom: 1px solid #eee; /* Separador entre ítems */
+}
+
+.offcanvas-menu li:last-child {
+    border-bottom: none;
+}
+
+.offcanvas-menu a {
+    display: block;
+    padding: 15px 20px;
+    color: #333; /* Color del enlace */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.offcanvas-menu a:hover,
+.offcanvas-menu a:focus {
+    background-color: #f8f8f8; /* Color de fondo al pasar el ratón */
+    color: #000;
+}
+
+/* Estilo especial para el botón Donate (ejemplo) */
+.offcanvas-menu a.donate-link {
+    color: #f56161; /* Color distintivo */
+    font-weight: bold;
+}
+
+/* --- Overlay --- */
+.offcanvas-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    z-index: 1040; /* Debajo del menú pero sobre el contenido */
+
+    /* Estado inicial: oculto */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s ease-in-out, visibility 0.35s ease-in-out;
+}
+
+.offcanvas-overlay.is-open {
+    opacity: 1;
+    visibility: visible; /* Visible cuando está activo */
+}
+
+/* HEADER DESKTOP */
+
+.desktop-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    max-width: none;
+}
+
+.desktop-header-container {
+    height: 80px;
+    background-color: #d94647;
+    max-width: 1450px;
+}
+
+.desktop-header-left {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.desktop-header .header-logo-container {
+    padding: 0.5rem 4rem 0.5rem 1.3rem;
+    height: 100%;
+}
+
+.desktop-header .header-logo-container img {
+    max-height: 60px;
+}
+
+.desktop-header-right {
+}
+
+.desktop-top,
+.desktop-bottom {
+    width: 100%;
+}
+
+.desktop-top {
+    background-color: #e6edf5;
+    height: 30px;
+    position: relative;
+}
+
+.desktop-top::before {
+    z-index: 1;
+    content: "";
+    height: 100%;
+    background-color: #e6edf5;
+    width: 40px;
+    position: absolute;
+    left: -40px;
+}
+
+.desktop-bottom {
+    height: 50px;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.desktop-top-info {
+    color: #674c4f;
+    margin-right: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.desktop-top-info span {
+    color: #d94647;
+}
+
+.desktop-bottom ul {
+    list-style-type: none;
+    gap: 15px;
+    margin-right: 1rem;
+}
+
+.desktop-bottom li {
+    margin: 0;
+}
+
+.desktop-bottom li a {
+    font-size: 0.7rem;
+}
+
+.desktop-bottom .white-btn {
+    align-self: auto;
+    padding: 0.4rem 6%;
+    font-weight: 500;
+    margin-right: 1%;
+    border-radius: 2px;
+}
+
+.dropdown-menu {
+    background-color: #fff;
+    color: #000;
+}
+
+/* max width 1230 */
+
+@media (max-width: 1245px) {
+    .desktop-bottom .white-btn {
+        /* padding: 0.4rem 1rem; */
+        display: none !important;
+    }
+    .desktop-bottom ul {
+        list-style-type: none;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .desktop-bottom ul {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Estilos para los enlaces de navegación */
+.desktop-bottom .nav-item {
+    margin: 0 10px; /* Espacio entre los elementos del menú */
+}
+
+.desktop-bottom .nav-link {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0.5rem 0; /* Ajusta el padding vertical */
+    border-bottom: 2px solid transparent; /* Efecto hover */
+    transition: border-color 0.3s ease;
+}
+
+/* Efecto hover para los enlaces */
+.desktop-bottom .nav-link:hover {
+    color: #f0f0f0;
+}
+
+/* Eliminar la flecha por defecto del dropdown y usar la de Font Awesome si se prefiere */
+.desktop-bottom .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown-menu {
+    border-radius: 0;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    font-weight: 500;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #d9534f;
+    color: white;
+}
+
+/* Estilos para el botón "DONATE" que pediste mantener/adaptar */
+.white-btn {
+    background-color: #f7f7f7;
+    color: #d9534f;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.white-btn:hover {
+    background-color: #e0e0e0;
+    color: #b9423d;
+}
+
+/* TAGS */
+
+.search-tags {
+    gap: 1rem;
+}
+
+.btn-topic {
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 0.1rem 1rem;
+    border-radius: 0;
+    border-bottom-left-radius: 3px;
+}

@@ -1,0 +1,9 @@
+curl "https://aisign-openai-model.openai.azure.com/openai/deployments/AiSign-Chat-Assistant/chat/completions?api-version=2024-02-01" \
+  -H "api-key: sk-proj-BYHyw3qTuGw26q3fS3OYT3BlbkFJRblMyiR5DFFNBg4IQAUL" \
+  -H "Content-Type: application/json" \
+  -d '{
+     "messages": [
+       {"role": "system", "content": "Eres un asistente útil"},
+       {"role": "user", "content": "Hola, ¿qué tal estás?"}
+     ]
+  }'

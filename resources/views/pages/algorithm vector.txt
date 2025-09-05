@@ -1,0 +1,24 @@
+algorithm vector
+ empleado=array[1...6] of est //declare como array
+ var
+  int:i,n
+  string:cadena
+  empleado:emp
+  file:entrada // archivo
+  begin //comienzo  
+ 
+   open_file(entrada,"empleadostxt","r")
+   n<-6
+   for i<-1 to n do:
+    read_file(entrada,cadena) // guarda la cadena que encuentra en entrada
+    read(emp[i],cadena) // llenado del vector
+   endfor
+
+   //parte uno listo
+    
+
+
+
+   close_file(entrada)
+  end
+
